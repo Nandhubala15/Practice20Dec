@@ -17,7 +17,7 @@ public class PojoFlipkart02 extends BaseClass {
 	@FindBy(xpath = "//a[text()='2.35 m']")
 	private WebElement bottomLength;
 
-	@FindBy(xpath = "//button[text()='ADD TO CART']")
+	@FindBy(xpath = "//button[text()='Add to cart']")
 	private WebElement addCart;
 	
 	@FindBy(xpath="//div[text()='Out Of Stock']")

@@ -21,20 +21,25 @@ public class HookClass extends BaseClass {
 
 	}
 
-	@After(order = 1)
-	public void closebrow() {
+	
+	@After(order=5)
+	public void scrennsh(Scenario s) {
 
-		toCloseBrowser();
-
-	}
-
-	@After
-	public void takeSnap(Scenario s) {
 		if (s.isFailed()) {
+
 			TakesScreenshot tk = (TakesScreenshot) driver;
-			byte[] screenshotAs = tk.getScreenshotAs(OutputType.BYTES);
-			s.embed(screenshotAs, "image/png");
+			byte[] snap = tk.getScreenshotAs(OutputType.BYTES);
+			s.embed(snap, "image/png");
 
 		}
+		
+		}
+	@After(order=1)
+	public void closebrowser() {
+
+		driver.quit();
+
+
 	}
 }
+

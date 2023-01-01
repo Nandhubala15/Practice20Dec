@@ -30,7 +30,6 @@ public class StepDefiniFlipkart extends BaseClass {
 
 		page1 = new PojoFlipkart01();
 		page1.getSearchBox().sendKeys("Salwar Suits");
-		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4000));
 		page1.getClickIcon().click();
 
 	}
@@ -39,8 +38,7 @@ public class StepDefiniFlipkart extends BaseClass {
 	public void select_a_suit() {
 		page1 = new PojoFlipkart01();
 		page1.getSalwarSuit().click();
-
-		toSwitchtoWindow(1);
+        toSwitchtoWindow(1);
 
 	}
 
@@ -49,9 +47,7 @@ public class StepDefiniFlipkart extends BaseClass {
 
 		page2 = new PojoFlipkart02();
 		page2.getTopLength().click();
-		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4000));
 		page2.getBottomLength().click();
-		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4000));
 		page2.getAddCart().click();
 
 	}
@@ -84,9 +80,9 @@ public class StepDefiniFlipkart extends BaseClass {
 	@When("Scroll down")
 	public void scroll_down() {
 
-//		pojo = new PojoMeesho();
-//		WebElement scrldown = pojo.getScrldown();
-//		toScrollDown(scrldown);
+		// pojo = new PojoMeesho();
+		// WebElement scrldown = pojo.getScrldown();
+		// toScrollDown(scrldown);
 
 	}
 
@@ -99,16 +95,14 @@ public class StepDefiniFlipkart extends BaseClass {
 
 	@Then("print the product Details")
 	public void print_the_product_Details() {
-		
-		
 
 		pojo = new PojoMeesho();
 		WebElement productName = pojo.getProductName();
 		String text = productName.getText();
 		System.out.println(text);
-		WebElement details = pojo.getDetails();
-		String text2 = details.getText();
-		System.out.println(text2);
+		// WebElement details = pojo.getDetails();
+		// String text2 = details.getText();
+		// System.out.println(text2);
 
 	}
 
@@ -121,7 +115,7 @@ public class StepDefiniFlipkart extends BaseClass {
 
 	@Then("Enter Mobile Number")
 	public void enter_Mobile_Number() {
-		//pojo = new PojoMeesho();
+		// pojo = new PojoMeesho();
 
 	}
 

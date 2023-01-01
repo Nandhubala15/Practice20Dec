@@ -1,30 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="95.41369">
-<testcase classname="" name="_2" time="95.41369">
-<failure message="org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //span[text()='Name']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.4.0', revision: 'e5c75ed026a'&#10;System info: host: 'DESKTOP-P23JR2D', ip: '192.168.43.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'&#10;Driver info: driver.version: RemoteWebDriver&#13;&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)&#13;&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)&#13;&#10;&#9;at com.sun.proxy.$Proxy22.sendKeys(Unknown Source)&#13;&#10;&#9;at org.stepdefinition.StepDefiniFlipkart.enter_details(StepDefiniFlipkart.java:132)&#13;&#10;&#9;at ✽.enter details(file:src/test/resources/FeatureFile/Flipkart.feature:21)&#13;&#10;"><![CDATA[Given Launch meesho url.....................................................passed
-When Search smart Watch.....................................................passed
-And Scroll down.............................................................passed
-And select any smart watch..................................................passed
-Then print the product Details..............................................passed
-And Buy.....................................................................passed
-And Enter Mobile Number.....................................................passed
-And enter details...........................................................failed
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //span[text()='Name']
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-P23JR2D', ip: '192.168.43.111', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy22.sendKeys(Unknown Source)
-	at org.stepdefinition.StepDefiniFlipkart.enter_details(StepDefiniFlipkart.java:132)
-	at ✽.enter details(file:src/test/resources/FeatureFile/Flipkart.feature:21)
-]]></failure>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="68.176094">
+<testcase classname="" name="_2" time="68.176094">
+<system-out><![CDATA[Given launch flipkart URL...................................................passed
+When Search Salwar suits....................................................passed
+And Select a suit...........................................................passed
+And add into cart...........................................................passed
+Then Print the Order Details................................................passed
+]]></system-out>
 </testcase>
 </testsuite>
